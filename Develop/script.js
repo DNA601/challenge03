@@ -1,17 +1,24 @@
 // Assignment Code
+
+var cH = ["*", "$", "@", "#", ":", "&", "?", "!", ".", "+", "?", "-", "^"];
+var uC = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+var lowC = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+//variables for all possible combo of passwords
 function generatePassword() {
 
-    var cH = ["*", "$", "@", "#", ":", "&", "?", "!", ".", "+", "?", "-", "^"];
-    var uC = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-    var lowC = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-    var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-
-    numberOfCharacters = prompt("How many characters do you want your password to contain? You are allowed a minimum of 8 and a maximum of 129 characters.");
-
-
+    numberOfCharacters = prompt("How many characters do you want your password to contain? You are allowed a minimum of 8 and a maximum of 128 characters.");
+    //pop up once button is clicked.
+    if (numberOfCharacters < 8 || numberOfCharacters > 128) {
+        return alert("invalid input of characters. Try agaim");
+    } else {
+        alert("Congrats, your password will contain " + numberOfCharacters + " characters. ");
 
 
 
+
+
+    }
 }
 
 var generateBtn = document.querySelector("#generate");
