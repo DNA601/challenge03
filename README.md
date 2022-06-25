@@ -25,10 +25,8 @@ https://www.w3schools.com/js/js_random.asp
 
 # images.
 
+![](https://courses.bootcampspot.com/courses/1729/files/1879385/preview)
 
-![](C:\Users\Dnava\Desktop\challenge03\Assets\images\screenshot.png)
-
-  
 
 
 
